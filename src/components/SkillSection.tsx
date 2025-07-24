@@ -63,7 +63,7 @@ export default function SkillSection() {
     return (
         <section id="skills" className='py-24 px-4 relative bg-secondary/30'>
             <div className="container max-w-5xl mx-auto">
-                <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">My
+                <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">My {""}
                     <span className="text-primary">Skills</span>
                 </h2>
 
