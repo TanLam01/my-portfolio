@@ -37,7 +37,7 @@ export default function Navbar() {
                     href="#hero"
                 >
                     <span className="relative z-10">
-                        <span className="text-glow text-foreground"> PedroTech </span>
+                        <span className="text-glow text-foreground"> Lam Tat </span>
                         Portfolio
                     </span>
                 </a>

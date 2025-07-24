@@ -29,7 +29,7 @@ export default function ThemeToggle() {
     };
 
     return (
-        <button className={cn("p-2 rounded-full transition-colors duration-300",
+        <button className={cn("p-2 rounded-full transition-colors duration-300 cursor-pointer",
             "focus:outline-hidden"
         )} onClick={toggleTheme}>
             {isDarkMode
