@@ -1,4 +1,4 @@
-import { Code, Smartphone, User } from 'lucide-react'
+import { Code, Smartphone } from 'lucide-react'
 
 export default function AboutSection() {
     return (
