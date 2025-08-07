@@ -14,7 +14,7 @@ export default function HomeSection() {
                         <span className="text-gradient ml-2 opacity-0 animate-fade-in-delay-2"> Tat</span>
                     </h1>
                     <p className="text-lg md:text-xl text-muted-foreground max-2-2xl mx-auto opacity-0 animate-fade-in-delay-3">
-                        A Frontend Developer based in Ho Chi Minh City, Vietnam.
+                        A Frontend Engineer working in Ho Chi Minh City, Vietnam.
                     </p>
 
                     <div className="pt-4 opacity-0 animate-fade-in-delay-4">
