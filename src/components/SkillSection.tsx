@@ -5,55 +5,73 @@ const skills = [
     // Frontend
     {
         name: 'JavaScript/TypeScript',
-        level: 'Advanced',
+        level: 90,
         category: 'Frontend',
         icon: 'path/to/javascript-icon.svg',
     }, {
         name: 'React',
-        level: 'Advanced',
+        level: 90,
         category: 'Frontend',
         icon: 'path/to/react-icon.svg',
     }, {
         name: 'Next.js',
-        level: 'Intermediate',
+        level: 70,
         category: 'Frontend',
-        icon: 'path/to/nextjs-icon.svg',
+    }, {
+        name: 'Vue.js',
+        level: 70,
+        category: 'Frontend',
     }, {
         name: 'HTML & CSS (SCSS)',
-        level: 'Advanced',
+        level: 90,
         category: 'Frontend',
-        icon: 'path/to/html-css-icon.svg',
     }, {
         name: 'Tailwind CSS',
-        level: 'Intermediate',
+        level: 70,
         category: 'Frontend',
-        icon: 'path/to/tailwind-icon.svg',
-    },
-    {
+    }, {
+        name: 'Styled Components',
+        level: 90,
+        category: 'Frontend',
+    }, {
+        name: 'Redux',
+        level: 60,
+        category: 'Frontend',
+    }, {
         name: 'Flutter',
-        level: 'Beginner',
+        level: 60,
         category: 'Frontend',
-        icon: 'path/to/Flutter-icon.svg',
+    }, {
+        name: 'RESTful API/GraphQL',
+        level: 80,
+        category: 'Frontend',
+    }, {
+        name: 'React Hooks',
+        level: 80,
+        category: 'Frontend',
     },
 
     // Tools
     {
         name: 'Git/GitHub',
-        level: 'Intermediate',
+        level: '70',
         category: 'Tools',
-        icon: 'path/to/git-icon.svg'
-    },
-    {
+    }, {
         name: 'Figma',
-        level: 'Intermediate',
+        level: '60',
         category: 'Tools',
-        icon: 'path/to/figma-icon.svg'
-    },
-    {
+    }, {
         name: 'Docker',
-        level: 'Intermediate',
+        level: '20',
         category: 'Tools',
-        icon: 'path/to/docker-icon.svg'
+    }, {
+        name: 'AWS Services',
+        level: '60',
+        category: 'Tools',
+    }, {
+        name: 'Jira',
+        level: '100',
+        category: 'Tools',
     },
 ];
 
@@ -79,7 +97,7 @@ export default function SkillSection() {
                             className={cn("px-5 py-2 rounded-full transition-colors duration-300 capitalize",
                                 activeCategory === category
                                     ? "bg-primary text-primary-foreground"
-                                    : category === "Intermediate" ? "bg-secondary/70 text-foreground hover:bd-secondary" : "bg-secondary/0 text-foreground hover:bd-secondary"
+                                    : "bg-secondary/70 text-foreground hover:bd-secondary"
                             )}
                             onClick={() => setActiveCategory(category)}
                         >
@@ -99,11 +117,11 @@ export default function SkillSection() {
                             </div>
                             <div className="w-full bg-secondary/50 rounded-full h-2 overflow-hidden">
                                 <div className="bg-primary h-2 rounded-full origin-left animate-[grow_1.5s_ease-out]"
-                                    style={{ width: skill.level === 'Advanced' ? '100%' : skill.level === 'Intermediate' ? '70%' : '50%' }}
+                                    style={{ width: skill.level + "%" }}
                                 />
                             </div>
                             <div className="text-right mt-1">
-                                <span className="text-sm text-muted-foreground">{skill.level}</span>
+                                <span className="text-sm text-muted-foreground">{skill.level}%</span>
                             </div>
                             {/* </div> */}
                         </div>
