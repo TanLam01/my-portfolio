@@ -3,7 +3,6 @@ import { Briefcase, Code, User } from 'lucide-react'
 export default function AboutSection() {
     return (
         <section id='about' className='py-24 px-4 relative'>
-            {" "}
             <div className='container max-w-5xl mx-auto '>
                 <h2 className='text-3xl md:text-4xl font-bold text-center mb-12'>
                     About <span className='text-primary'>Me</span>
@@ -11,7 +10,7 @@ export default function AboutSection() {
             </div>
             <div className='grid grid-cols-1 md:grid-cols-2 gap-12 items-center'>
                 <div className='space-y-6'>
-                    <h3 className='text-2xl font-semibold'>Passionate Web Developer</h3>
+                    <h3 className='text-2xl font-semibold'>Passionate Frontend Engineer</h3>
                     <p className='text-muted-foreground'>
                         Front-end Developer with 2 years of experience in building web and mobile applications using Next.js,
                         React, and Flutter.
@@ -48,7 +47,7 @@ export default function AboutSection() {
                                     Web Development
                                 </h4>
                                 <p className='text-muted-foreground'>
-                                    Building responsive and interactive web applications using modern frameworks.
+                                    Building responsive and interactive web applications using React.js and Next.js frameworks.
                                 </p>
                             </div>
                         </div>
@@ -60,25 +59,10 @@ export default function AboutSection() {
                             </div>
                             <div className='text-left'>
                                 <h4 className='font-semibold text-lg'>
-                                    UI/UX Design
+                                    App Development
                                 </h4>
                                 <p className='text-muted-foreground'>
-                                    Creating user-centered designs and intuitive interfaces for web applications.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className='gradient-border p-6 card-hover'>
-                        <div className='flex items-start gap-4'>
-                            <div className='p-3 rounded-full bg-primary/10'>
-                                <Briefcase className='h-6 w-6 text-primary' />
-                            </div>
-                            <div className='text-left'>
-                                <h4 className='font-semibold text-lg'>
-                                    Frontend Developer
-                                </h4>
-                                <p className='text-muted-foreground'>
-                                    Building responsive and interactive web applications using modern frameworks.
+                                    Building mobile applications using Flutter Framework.
                                 </p>
                             </div>
                         </div>

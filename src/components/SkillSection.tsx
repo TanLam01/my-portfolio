@@ -29,6 +29,12 @@ const skills = [
         category: 'Frontend',
         icon: 'path/to/tailwind-icon.svg',
     },
+    {
+        name: 'Flutter',
+        level: 'Beginner',
+        category: 'Frontend',
+        icon: 'path/to/Flutter-icon.svg',
+    },
 
     // Tools
     {
@@ -73,7 +79,7 @@ export default function SkillSection() {
                             className={cn("px-5 py-2 rounded-full transition-colors duration-300 capitalize",
                                 activeCategory === category
                                     ? "bg-primary text-primary-foreground"
-                                    : "bg-secondary/70 text-foreground hover:bd-secondary"
+                                    : category === "Intermediate" ? "bg-secondary/70 text-foreground hover:bd-secondary" : "bg-secondary/0 text-foreground hover:bd-secondary"
                             )}
                             onClick={() => setActiveCategory(category)}
                         >

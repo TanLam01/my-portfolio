@@ -1,28 +1,28 @@
-import { useToast } from "@/hooks/use-toast";
-import { cn } from "@/lib/utils";
-import { Linkedin, Mail, MapPin, Phone, Send } from "lucide-react";
-import React from "react";
+// import { useToast } from "@/hooks/use-toast";
+// import { cn } from "@/lib/utils";
+import { Linkedin, Mail, MapPin, Phone } from "lucide-react";
+// import React from "react";
 
 export default function ContactSection() {
-    const { toast } = useToast();
-    const [isSubmitting, setIsSubmitting] = React.useState(false);
+    // const { toast } = useToast();
+    // const [isSubmitting, setIsSubmitting] = React.useState(false);
 
-    const handleSubmit = (e: React.FormEvent) => {
-        e.preventDefault();
-        setIsSubmitting(true);
-        // Handle form submission logic here
-        setTimeout(() => {
-            toast({
-                title: "Message Sent",
-                description: "Thank you for your message! I will get back to you soon.",
-            });
-            setIsSubmitting(false);
-        }, 1500);
-    }
+    // const handleSubmit = (e: React.FormEvent) => {
+    //     e.preventDefault();
+    //     setIsSubmitting(true);
+    //     // Handle form submission logic here
+    //     setTimeout(() => {
+    //         toast({
+    //             title: "Message Sent",
+    //             description: "Thank you for your message! I will get back to you soon.",
+    //         });
+    //         setIsSubmitting(false);
+    //     }, 1500);
+    // }
 
     return (
         <section id="contact" className="py-24 px-4 relative">
-            <div className="container mx-auto max-w-5xl">
+            <div className="flex flex-col items-center justify-center container mx-auto max-w-5xl">
                 <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
                     Contact <span className="text-primary">Me</span>
                 </h2>
@@ -30,63 +30,62 @@ export default function ContactSection() {
                 <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
                     I'm always open to discussing new opportunities to be part of your vision.
                 </p>
+                <div className="space-y-8">
+                    <h3 className="text-xl font-semibold mb-6">
+                        Contact Information
+                    </h3>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-                    <div className="space-y-8">
-                        <h3 className="text-xl font-semibold mb-6">
-                            Contact Information
-                        </h3>
-
-                        <div className="space-y-6 justify-center">
-                            <div className="flex items-start space-x-4">
-                                <div className="p-3 rounded-full bg-primary/10">
-                                    <Mail className="h-6 w-6 text-primary" /> {" "}
-                                </div>
-                                <div className="">
-                                    <h4 className="font-medium">Email</h4>
-                                    <a href="mailto:tattanlam.work@gmail.com" className="text-muted-foreground hover:text-primary transition-colors">
-                                        tattanlam.work@gmail.com
-                                    </a>
-                                </div>
+                    <div className="space-y-6 justify-center">
+                        <div className="flex items-start space-x-4">
+                            <div className="p-3 rounded-full bg-primary/10">
+                                <Mail className="h-6 w-6 text-primary" /> {" "}
                             </div>
-
-                            <div className="flex items-start space-x-4">
-                                <div className="p-3 rounded-full bg-primary/10">
-                                    <Phone className="h-6 w-6 text-primary" /> {" "}
-                                </div>
-                                <div className="">
-                                    <h4 className="font-medium">Phone</h4>
-                                    <a href="tel:+84902795906" className="text-muted-foreground hover:text-primary transition-colors">
-                                        +84 902-795-906
-                                    </a>
-                                </div>
-                            </div>
-
-                            <div className="flex items-start space-x-4">
-                                <div className="p-3 rounded-full bg-primary/10">
-                                    <MapPin className="h-6 w-6 text-primary" /> {" "}
-                                </div>
-                                <div className="">
-                                    <h4 className="font-medium">Location</h4>
-                                    <p className="text-muted-foreground">
-                                        Ho Chi Minh City, Vietnam
-                                    </p>
-                                </div>
+                            <div className="">
+                                <h4 className="text-start font-medium">Email</h4>
+                                <a href="mailto:tattanlam.work@gmail.com" className="text-muted-foreground hover:text-primary transition-colors">
+                                    tattanlam.work@gmail.com
+                                </a>
                             </div>
                         </div>
 
-                        <div className="pt-8">
-                            <h4 className="font-medium mb-4">
-                                Connect With Me
-                            </h4>
-                            <div className="flex space-x-4 justify-center">
-                                <a href="https://www.linkedin.com/in/lam-tat/" target="_blank">
-                                    <Linkedin />
+                        <div className="flex items-start space-x-4">
+                            <div className="p-3 rounded-full bg-primary/10">
+                                <Phone className="h-6 w-6 text-primary" /> {" "}
+                            </div>
+                            <div className="">
+                                <h4 className="text-start font-medium">Phone</h4>
+                                <a href="tel:+84902795906" className="text-muted-foreground hover:text-primary transition-colors">
+                                    +84 902-795-906
                                 </a>
+                            </div>
+                        </div>
+
+                        <div className="flex items-start space-x-4">
+                            <div className="p-3 rounded-full bg-primary/10">
+                                <MapPin className="h-6 w-6 text-primary" /> {" "}
+                            </div>
+                            <div className="">
+                                <h4 className="text-start font-medium">Location</h4>
+                                <p className="text-muted-foreground">
+                                    Ho Chi Minh City, Vietnam
+                                </p>
                             </div>
                         </div>
                     </div>
 
+                    <div className="pt-8">
+                        <h4 className="font-medium mb-4">
+                            Connect With Me
+                        </h4>
+                        <div className="flex space-x-4 justify-center">
+                            <a href="https://www.linkedin.com/in/lam-tat/" target="_blank">
+                                <Linkedin />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
                     <div className="bg-card p-8 rounded-lg shadow-xs" onSubmit={handleSubmit}>
                         <h3 className="text-2xl font-semibold mb-6">
                             Send Me a Message
@@ -135,7 +134,7 @@ export default function ContactSection() {
                         </form>
 
                     </div>
-                </div>
+                </div> */}
             </div>
         </section>
     )
