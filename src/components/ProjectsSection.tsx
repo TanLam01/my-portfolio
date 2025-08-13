@@ -1,6 +1,7 @@
 import { ArrowRight, ExternalLink } from "lucide-react"
 import fitnessJourneyImage from "@/assets/images/fitness_journey.png"
 import gggMetaverseImage from "@/assets/images/ggg.png"
+import portfolio from "@/assets/images/portfolio.png";
 
 const projects = [{
     id: 1,
@@ -16,6 +17,27 @@ const projects = [{
     link: "https://www.greenwaygrid.global/en/business/g-cube/",
     image: gggMetaverseImage,
     tags: ["React.js", "Next.js", "TypeScript", "Styled Components", "Atomic Design", "AWS Service", "React Hooks", "RESTful API/GraphQL"],
+}, {
+    id: 3,
+    title: "My portfolio",
+    description: "Showcase of my work and projects.",
+    link: "https://my-portfolio-lamtat.vercel.app/",
+    image: portfolio,
+    tags: ["React.js", "Vite", "HTML", "TailWindCSS", "lucide-react"],
+}, {
+    id: 4,
+    title: "Chats App",
+    description: "Real-time chat application.",
+    link: "https://github.com/TanLam01/chatsApp",
+    image: "",
+    tags: ["React.js", "Next.js", "TypeScript", "TaiWindCSS", "Firebase", "Zustand", "Zod", "Shadcn"],
+}, {
+    id: 5,
+    title: "Stepzen Weather",
+    description: "Stepzen Weather is a weather app that delivers real-time updates and forecasts, leveraging AI to generate concise weather summaries.",
+    link: "https://github.com/TanLam01/stepzen-weather",
+    image: "",
+    tags: ["React.js", "Next.js", "TypeScript", "TailWindCSS", "OpenAI", "GraphQL"],
 }]
 
 export default function ProjectsSection() {

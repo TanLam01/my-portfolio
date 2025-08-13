@@ -12,7 +12,7 @@ export default function AboutSection() {
                 <div className='space-y-6'>
                     <h3 className='text-2xl font-semibold'>Passionate Frontend Engineer</h3>
                     <p className='text-muted-foreground'>
-                        Front-end Developer with 2 years of experience in building web and mobile applications using Next.js,
+                        Front-end Engineer with 2 years of experience in building web and mobile applications using Next.js,
                         React, and Flutter.
                     </p>
                     <p className='text-muted-foreground'>

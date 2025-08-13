@@ -1,6 +1,6 @@
 // import { useToast } from "@/hooks/use-toast";
 // import { cn } from "@/lib/utils";
-import { Linkedin, Mail, MapPin, Phone } from "lucide-react";
+import { Facebook, Github, Linkedin, Mail, MapPin, Phone } from "lucide-react";
 // import React from "react";
 
 export default function ContactSection() {
@@ -80,6 +80,12 @@ export default function ContactSection() {
                         <div className="flex space-x-4 justify-center">
                             <a href="https://www.linkedin.com/in/lam-tat/" target="_blank">
                                 <Linkedin />
+                            </a>
+                            <a href="https://github.com/TanLam01" target="_blank">
+                                <Github />
+                            </a>
+                            <a href="https://www.facebook.com/ha.lam.875968/" target="_blank">
+                                <Facebook />
                             </a>
                         </div>
                     </div>
