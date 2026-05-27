@@ -4,15 +4,13 @@ import { useState } from "react"
 const skills = [
     // Frontend
     {
-        name: 'JavaScript/TypeScript',
+        name: 'JavaScript / TypeScript',
         level: 90,
         category: 'Frontend',
-        icon: 'path/to/javascript-icon.svg',
     }, {
-        name: 'React',
+        name: 'React.js',
         level: 90,
         category: 'Frontend',
-        icon: 'path/to/react-icon.svg',
     }, {
         name: 'Next.js',
         level: 70,
@@ -20,6 +18,10 @@ const skills = [
     }, {
         name: 'Vue.js',
         level: 70,
+        category: 'Frontend',
+    }, {
+        name: 'Flutter',
+        level: 60,
         category: 'Frontend',
     }, {
         name: 'HTML & CSS (SCSS)',
@@ -34,21 +36,36 @@ const skills = [
         level: 90,
         category: 'Frontend',
     }, {
-        name: 'Redux',
-        level: 60,
-        category: 'Frontend',
-    }, {
-        name: 'Flutter',
-        level: 60,
-        category: 'Frontend',
-    }, {
-        name: 'RESTful API/GraphQL',
+        name: 'Zustand',
         level: 80,
         category: 'Frontend',
     }, {
         name: 'React Hooks',
         level: 80,
         category: 'Frontend',
+    },
+
+    // Backend
+    {
+        name: 'Laminas Zend & Mezzio (PHP)',
+        level: 80,
+        category: 'Backend',
+    }, {
+        name: 'MariaDB / MySQL',
+        level: 70,
+        category: 'Backend',
+    }, {
+        name: 'Doctine ORM 2',
+        level: 70,
+        category: 'Backend',
+    }, {
+        name: 'Kafka',
+        level: 60,
+        category: 'Backend',
+    }, {
+        name: 'Redis',
+        level: 60,
+        category: 'Backend',
     },
 
     // Tools
@@ -62,7 +79,7 @@ const skills = [
         category: 'Tools',
     }, {
         name: 'Docker',
-        level: '20',
+        level: '30',
         category: 'Tools',
     }, {
         name: 'AWS Services',
@@ -73,10 +90,15 @@ const skills = [
         level: '100',
         category: 'Tools',
     },
+    {
+        name: 'RESTful API / GraphQL',
+        level: 80,
+        category: 'Tools',
+    }
 ];
 
 const categories = [
-    "all", "frontend", "tools"
+    "all", "frontend", "backend", "tools"
 ];
 
 export default function SkillSection() {

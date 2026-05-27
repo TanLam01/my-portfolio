@@ -10,22 +10,18 @@ export default function AboutSection() {
             </div>
             <div className='grid grid-cols-1 md:grid-cols-2 gap-12 items-center'>
                 <div className='space-y-6'>
-                    <h3 className='text-2xl font-semibold'>Passionate Frontend Engineer</h3>
+                    <h3 className='text-2xl font-semibold'>Passionate Software Engineer</h3>
                     <p className='text-muted-foreground'>
-                        Front-end Engineer with 2 years of experience in building web and mobile applications using Next.js,
-                        React, and Flutter.
+                        Software Engineer with 3 years of professional experience, specializing in both robust backend systems (PHP/Laminas) and scalable frontend architectures (React.js/Next.js/Vue.js/Flutter).
                     </p>
                     <p className='text-muted-foreground'>
-                        Proficient in integrating RESTful APIs to provide seamless data flow and improve user
-                        interfaces. Skilled in leveraging Prompt AI techniques to streamline development processes and create
-                        innovative solutions.
+                        Experienced in architecting highly scalable codebases using modern tools like pnpm monorepos. Proficient in scaling RESTful APIs, eliminating database bottlenecks using the CQRS pattern (Redis, Elasticsearch, MariaDB), and engineering event-driven pipelines with Kafka for high-traffic data streams.
                     </p>
                     <p className='text-muted-foreground'>
-                        Adept at working in Agile environments, applying strong problem-solving abilities and
-                        fostering team collaboration to meet project goals and drive technical excellence.
+                        Skilled in mastering real-time messaging layers using GraphQL (AWS AppSync) and implementing secure enterprise-grade authentication (Auth0), allowing me to seamlessly bridge the gap between frontend user experience and complex backend infrastructure.
                     </p>
                     <p className='text-muted-foreground'>
-                        Comfortable communicating in English with teams to ensure smooth collaboration and alignment of the project
+                        Adept at working in Agile environments, bringing full-stack expertise and performance optimization skills to drive technical excellence. Comfortable communicating in English with teams to ensure smooth collaboration and project alignment. Eager to learn new technologies and tools to meet project requirements.
                     </p>
                     <div className='flex flex-col sm:flex-row gap-4 pt-4 justify-center'>
                         <a href="#contact" className='cosmic-button'>

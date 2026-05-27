@@ -8,14 +8,14 @@ import portfolio from "@/assets/images/portfolio.png";
 const featuredProjects = [{
     id: 1,
     title: "Engihire",
-    description: "",
+    description: "A comprehensive recruitment management system built to digitize and streamline the entire candidate lifecycle, from multi-channel application tracking and multi-stage interview scheduling to performance evaluation and onboarding.",
     link: "https://visitor.hire.engibase.com/",
     image: engihireImage,
-    tags: ["Vue.js", "TypeScript", "Pinia", "TailWindCSS", "RESTful API", "Laminas Mezzio (PHP)", "Docker", "Kafka", "Redis", "Tanstack Query"],
+    tags: ["Vue.js (TypeScript)", "Pinia", "TailWindCSS", "RESTful API", "Laminas Mezzio (PHP)", "Docker", "Kafka", "Redis", "Tanstack Query"],
 }, {
     id: 2,
     title: "Engibase",
-    description: "",
+    description: "Developed a centralized platform to manage engineer skill matrices (technical stacks, certifications) and career aspirations. Built real-time tracking for engineer utilization (bench vs. project-active) to optimize talent allocation, streamline negotiation, and ensure project-personnel alignment with both technical requirements and individual growth paths",
     link: "https://engibase.com/",
     image: engibaseImage,
     tags: ["Laminas Zend (PHP)", "HTML", "CSS", "Javascript", "Bootstrap", "jQuery", "Docker", "Kafka", "Redis"],
@@ -25,14 +25,14 @@ const featuredProjects = [{
     description: "Fitness Journey is a facility search and habit-building goal-setting app for fitness enthusiasts.",
     link: "https://apps.apple.com/vn/app/fitness-journey/id6451079440?platform=iphone",
     image: fitnessJourneyImage,
-    tags: ["Flutter", "Dart", "Auth0", "RESTful API"],
+    tags: ["Flutter (Dart)", "Auth0", "RESTful API", "Web3", "Provider"],
 }, {
     id: 4,
     title: "GGG Metaverse",
     description: "Virtual space platform for real-time online events that allows users to create and join meetings, workshops, and other events in a virtual environment.",
     link: "https://www.greenwaygrid.global/en/business/g-cube/",
     image: gggMetaverseImage,
-    tags: ["React.js", "Next.js", "Zustand", "Zod", "TypeScript", "Styled Components", "Atomic Design", "AWS Service", "React Hooks", "RESTful API/GraphQL"],
+    tags: ["Next.js (TypeScript)", "Zustand", "Zod", "Styled Components", "Atomic Design", "AWS Service", "React Hooks", "RESTful API/GraphQL"],
 }];
 
 const personalProjects = [{
