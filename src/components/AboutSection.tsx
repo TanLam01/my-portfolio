@@ -27,7 +27,7 @@ export default function AboutSection() {
                         <a href="#contact" className='cosmic-button'>
                             Contact Me
                         </a>
-                        <a href="/public/resume/Tat_Tan_Lam-Software_Engineer.pdf" download className='px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300'>
+                        <a href="/resume/Tat_Tan_Lam-Software_Engineer.pdf" download className='px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300'>
                             Download Resume
                         </a>
                     </div>

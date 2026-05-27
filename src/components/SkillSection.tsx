@@ -89,10 +89,13 @@ const skills = [
         name: 'Jira',
         level: '100',
         category: 'Tools',
-    },
-    {
+    }, {
         name: 'RESTful API / GraphQL',
         level: 80,
+        category: 'Tools',
+    }, {
+        name: 'Postman / Bruno',
+        level: 90,
         category: 'Tools',
     }
 ];
