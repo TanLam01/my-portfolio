@@ -20,8 +20,8 @@ export default function Home() {
             <main>
                 <HomeSection />
                 <AboutSection />
-                <SkillSection />
                 <ProjectsSection />
+                <SkillSection />
                 <ContactSection />
             </main>
 
