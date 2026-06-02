@@ -5,13 +5,22 @@ import engihireImage from "@/assets/images/engihire.png"
 import engibaseImage from "@/assets/images/engibase.png"
 import portfolio from "@/assets/images/portfolio.png";
 
-const featuredProjects = [{
+interface Project {
+    id: number;
+    title: string;
+    description: string;
+    link: string;
+    image: string;
+    tags: string[];
+}
+
+const featuredProjects: Project[] = [{
     id: 1,
     title: "Engihire",
     description: "A comprehensive recruitment management system built to digitize and streamline the entire candidate lifecycle, from multi-channel application tracking and multi-stage interview scheduling to performance evaluation and onboarding.",
     link: "https://visitor.hire.engibase.com/",
     image: engihireImage,
-    tags: ["Vue.js (TypeScript)", "Pinia", "TailWindCSS", "RESTful API", "Laminas Mezzio (PHP)", "Docker", "Kafka", "Redis", "Tanstack Query"],
+    tags: ["React.js (TypeScript) + Vite", "Redux Toolkit", "TailWindCSS", "RESTful API", "Laminas Mezzio (PHP)", "Docker", "Kafka", "Redis", "Tanstack Query", "Shadcn UI", "Zod", "React Hooks"],
 }, {
     id: 2,
     title: "Engibase",
@@ -35,13 +44,13 @@ const featuredProjects = [{
     tags: ["Next.js (TypeScript)", "Zustand", "Zod", "Styled Components", "Atomic Design", "AWS Service", "React Hooks", "RESTful API/GraphQL"],
 }];
 
-const personalProjects = [{
+const personalProjects: Project[] = [{
     id: 5,
     title: "My portfolio",
     description: "Showcase of my work and projects.",
     link: "https://my-portfolio-lamtat.vercel.app/",
     image: portfolio,
-    tags: ["React.js", "Vite", "HTML", "TailWindCSS", "lucide-react"],
+    tags: ["React.js (TypeScript) + Vite", "Vite", "HTML", "TailWindCSS", "lucide-react"],
 }, {
     id: 6,
     title: "Chats App",
@@ -58,7 +67,7 @@ const personalProjects = [{
     tags: ["React.js", "Next.js", "TypeScript", "TailWindCSS", "OpenAI", "GraphQL"],
 }];
 
-const ProjectCard = ({ project }: { project: any }) => (
+const ProjectCard = ({ project }: { project: Project }) => (
     <div className="group bg-card rounded-lg overflow-hidden shadow-xs card-hover flex flex-col h-full">
         <div className="h-48 overflow-hidden bg-muted/20">
             {project.image && (
